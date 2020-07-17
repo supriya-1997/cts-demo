@@ -8,19 +8,22 @@ const Home = () => {
             <div id="carouselExampleControls" className="carousel slide " data-ride="carousel">
                 <div className="carousel-inner">
                     <div className="carousel-item active"> 
-                  <div style={{backgroundImage:"url(https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/March/Fuji_TallHero_ShipATW_Modified_en_US_1x._CB419795291_.jpg)",width:"100%",height:"400px"}}>
-                   {/*<span style={{}}>You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery <a href="#">Click here to go to amazon.in</a></span>*/}
+                 {/* <div style={{backgroundImage:"url(https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/March/Fuji_TallHero_ShipATW_Modified_en_US_1x._CB419795291_.jpg)",width:"100%",height:"400px"}}>
+                  <span style={{}}>You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery <a href="#">Click here to go to amazon.in</a></span>
                
-    </div>
+    </div>*/}
+    <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/March/Fuji_TallHero_ShipATW_Modified_en_US_1x._CB419795291_.jpg" class="img-fluid"style={{ width:"100%",height:"400px"}}/>
     <div className="carousel-caption d-none d-md-block text-center"><p style={{backgroundColor:'white',width:'100%',height:'40px',color:'black'}}>You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery <a href="#">Click here to go to amazon.in</a></p></div>
     {/* <h1>Hello</h1>*/}
                     </div>
                     <div className="carousel-item">
-                    <div style={{backgroundImage:"url(https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2019/April/Hero/Hero_Currency_EN_1X._CB466692681_.jpg)",width:"100%",height:"400px"}}>
-                   {/* <span class="color:black">You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery <a href="#">Click here to go to amazon.in</a></span>*/}
-                   <div className="carousel-caption d-none d-md-block text-center"><p  style={{backgroundColor:'white',width:'100%',height:'40px',color:'black'}}>You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery <a href="#">Click here to go to amazon.in</a></p></div>
+                   {/* <div style={{backgroundImage:"url(https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2019/April/Hero/Hero_Currency_EN_1X._CB466692681_.jpg)",width:"100%",height:"400px"}}>
+                   <span class="color:black">You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery <a href="#">Click here to go to amazon.in</a></span>
+                  
     </div>
 {/*<h1>Hello</h1>*/}
+<img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2019/April/Hero/Hero_Currency_EN_1X._CB466692681_.jpg" class="img-fluid"style={{ width:"100%",height:"400px"}}/>
+<div className="carousel-caption d-none d-md-block text-center"><p  style={{backgroundColor:'white',width:'100%',height:'40px',color:'black'}}>You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery <a href="#">Click here to go to amazon.in</a></p></div>
                     </div>
                     </div> 
                 <a className="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -74,7 +77,7 @@ const Home = () => {
   <div className="card-body">
     <h5 className="card-title">Amazon Basics</h5>
     <div className="row">
-        <div className="col-xs-12">
+        <div className="col-lg-12 col-md-6 col-sm-12">
     <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2019/July/amazonbasics_520x520._SY304_CB442725065_.jpg" width="250" height="230" alt="..."/>
    
     </div>
@@ -90,7 +93,7 @@ const Home = () => {
   <div className="card-body">
     <h5 className="card-title">Electronics</h5>
     <div className="row">
-        <div className="col-xs-12">
+        <div className="col-lg-12 col-md-6 col-sm-12 ">
     <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_Electronics_1x._SY304_CB432774322_.jpg" width="250" height="230" alt="..."/>
    
     </div>
@@ -106,8 +109,8 @@ const Home = () => {
   <div className="card-body">
     <h5 className="card-title">Sign in for the best experience</h5>
     <div className="row">
-        <div className="col-xs-12">
-        <a href="#" className="btn btn-warning ml-3">Sign in securely</a>
+        <div className="col-lg-12 col-md-6 col-sm-12">
+        <a href="#" className="btn btn-block btn-warning ml-3">Sign in securely</a>
    
     </div>
    
