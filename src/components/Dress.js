@@ -1,51 +1,50 @@
-import React,{useContext} from 'react'
-import {CartContext} from '../CartContext'
+import React, { useContext } from 'react'
+import { CartContext } from '../CartContext'
 const Dress = () => {
     const {
 
         state: { Dress },
-        
+
         addDitem
-        
-        } = useContext(CartContext);
+
+    } = useContext(CartContext);
 
     return (
         <>
-            <div class="container">
-                <div class="row">
+            <div className="container">
+                <div className="row">
                     {Dress.map(({ productImg, productName,
                         incart,
                         price,
                         size
 
-                    },index) =>
-                        <div class="col-sm-4">
-                            <div class="card shadow mt-3  mb-5 bg-white rounded " style={{ width: '18rem', height: '32rem' }}>
-                                <div class="card-body">
-                                    <div class="row">
+                    }, index) =>
+                        <div className="col-sm-4">
+                            <div className="card shadow mt-3  mb-5 bg-white rounded " style={{ width: '22rem', height: '32rem' }}>
+                                <div className="card-body">
+                                    <div className="row">
                                         <div className="col">
-                                            <img src={productImg} height='300' width='250' />
+                                            <img src={productImg} height='300' width='250' alt="dresses" />
                                         </div>
                                     </div>
-                                    <div class="row">
+                                    <div className="row">
                                         <b>{productName}</b>
                                     </div>
-                                    
-                                    <div class="row">
-                                        <div class="col"><b>${price}</b></div>
-                                        
+
+                                    <div className="row">
+                                        <div className="col"><b>${price}</b></div>
+
                                     </div>
-                                    <div class="row">
-                                        <div class="col">Size:{size}</div>
+                                    <div className="row">
+                                        <div className="col">Size:{size}</div>
                                     </div>
-                                    <div class="row">
-                                        <div class="col-sm-7">
-                                            <button onClick={() => addDitem(index)} className="card-link btn-sm btn-warning text-white" disabled={incart == "true" ? true : false}>
-                                                <i class="fa fa-shopping-cart"></i>&nbsp;ADD TO CART</button>
+                                    <div className="row">
+                                        <div className="col-sm-7">
+                                            
+                                                <button onClick={() => addDitem(index)} className="btn btn-warning btn-center" disabled={incart === "true" ? true : false}><i className="fa fa-shopping-cart"></i>Add to cart</button>
                                         </div>
-                                        <div class="col">
-                                            <button className="card-link btn-sm text-white" style={{ backgroundColor: 'Tomato' }}>
-                                                BUY NOW</button></div>
+                                        <div className="col">
+                                        <button className="card-link btn btn-danger text-white" >BUY NOW</button></div>
                                     </div>
                                 </div>
                             </div>
