@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Link, Route } from "react-router-dom";
+import { Link } from "react-router-dom";
 const Login = () => {
 
     return (
@@ -35,28 +35,29 @@ const Login = () => {
                 leXa4WLzfPXyyVz7fz1zVXF//VXW/g2RPkm9/D+FWtmflouNrj+8Ny/m9zqyrtPW9u/r0s1qucpql19uqffOn998xCyXiZUzXCzIRK+gqI76TffE8Uobda
                 7vG7iqUTGL+stgzfEy232CSbWmra5qNufpTezeIIjZq7Si0zvUftR3cVnzKer9xDVPJ6aLm9g3j72U3FV4yfHh63J9oudVru/eV3RuOX9Db3D1c78kmsj
                 Y/devl/ftjUe37ie3VeAWgqrutere/nt78wVx7HePP0NF8uX9fr9cNy+fafPSUkCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCII
-                gCIIgCIIgCIIgCIL4Tv4Hu9e8exYznDIAAAAASUVORK5CYII=" style={{float:'none',marginLeft:'500px' }} height="70" width="100" />
-                <div className="card" style={{ width: '420px', margin:'0 auto',float:'none' }}>
+                gCIIgCIIgCIIgCIL4Tv4Hu9e8exYznDIAAAAASUVORK5CYII=" style={{ float: 'none', marginLeft: '500px' }} height="70" width="100" alt="amazon" />
+                <div className="card" style={{ width: '420px', margin: '0 auto', float: 'none' }}>
                     <div className="card-body">
-                                <h3 className="ml-3">Sign-In</h3>
-                                <form>
-                                <div className="form-group">
-                                       <strong> <label htmlFor="email" class="float-left">Email(phone for mobile accounts)</label></strong>
-                                        <input type="email" className="form-control" id="email"  name="email" />
-                                    </div>
-                                    <button type="button" className="btn btn-block float-left" style={{ backgroundColor: '#ffa64d' }}> Continue</button>
-                                </form>
-                                 <p>By continuing,you agree to Amazon's <a href="#">Conditions of Use</a> and <a href="#">Privacy Notice.</a></p>  
-                                 <i className="fas fa-caret-right"></i><a href="#" >Need Help?</a>
+                        <h3 className="ml-3">Sign-In</h3>
+                        <form>
+                            <div className="form-group">
+                                <strong> <label htmlFor="email" class="float-left">Email(phone for mobile accounts)</label></strong>
+                                <input type="email" className="form-control" id="email" name="email" />
+                            </div>
+                            <button type="button" className="btn btn-block float-left" style={{ backgroundColor: '#ffa64d' }}> Continue</button>
+                        </form>
+                        <p>By continuing,you agree to Amazon's <span className="text-primary">Conditions of Use</span> and <span className="text-primary">Privacy Notice.</span></p>
+                        <i className="fas fa-caret-right"></i><span className="text-primary">Need Help?</span>
                     </div>
                 </div>
-                <div style={{margin:'0 auto',float:'none',marginLeft:'350px'}}>
-                <p className="line ml-3 mt-3">New to Amazon?</p>
-                <Link to="/CreateAccount"><button type="submit" className="btn" style={{ width:'420px', backgroundColor:'#ccffe6'}}>Create your Amazon Account</button></Link>
+                <div style={{ margin: '0 auto', float: 'none', marginLeft: '350px' }}>
+                    <p className="line ml-3 mt-3">New to Amazon?</p>
+                    <Link to="/CreateAccount"><button type="submit" className="btn" style={{ width: '420px', backgroundColor: '#ccffe6' }}>Create your Amazon Account</button></Link>
                 </div>
             </div>
         </>
-    )}
+    )
+}
 
 
 export default Login
