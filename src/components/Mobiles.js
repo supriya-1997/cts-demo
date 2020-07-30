@@ -1,116 +1,118 @@
-import React, { useContext} from 'react';
+import React, { useContext } from 'react';
 import { CartContext } from '../CartContext';
-const Mobiles = ()=>
-
-{
+const Mobiles = () => {
     const {
 
         state: { Mobiles },
-        
+
         addMitem
-        
-        } = useContext(CartContext);
+
+    } = useContext(CartContext);
 
 
 
 
-return (
+    return (
 
-<>
+        <>
 
-<div className="card shadow mt-5 mb-5 bg-white rounded container">
+            <div className="card shadow mt-5 mb-5 bg-white rounded container">
 
-<ul className="list-group list-group-flush">
+                <ul className="list-group list-group-flush">
 
-{Mobiles.map(({ productImg, productName,
-    specifications,
-    price,
-    incart,
-    
-    productRatings: { starRating, totalRating,totalReviews }
-},index)=>
-(
-<li className="list-group-item">
+                    {Mobiles.map(({ productImg, productName,
+                        specifications,
+                        price,
+                        incart,
 
-<div className="row">
+                        productRatings: { starRating, totalRating, totalReviews }
+                    }, index) =>
+                        (
+                            <li className="list-group-item">
 
-<div className="col-sm-5">
+                                <div className="row">
 
-<div className="row"><img src={productImg} height='380' width='200' /></div>
+                                    <div className="col-sm-5">
 
-<br /><br /><br /><br />
+                                        <div className="row"><img src={productImg} height='380' width='200' alt="phone" /></div>
 
-<div className="card-body">
+                                        <br /><br /><br /><br />
 
-<button onClick={() => addMitem(index)} className="btn btn-warning btn-center" disabled={incart == "true" ? true : false}><i className="fa fa-shopping-cart"></i>Add to cart</button>
+                                        <div className="card-body">
 
-{/* <button className="card-link btn-lg btn-warning text-white"><i class="fa fa-shopping-cart"></i>&nbsp;ADD TO CART</button>*/}
+                                            <button onClick={() => addMitem(index)} className="btn btn-warning btn-center" disabled={incart === "true" ? true : false}><i className="fa fa-shopping-cart"></i>Add to cart</button>
 
-<button className="card-link btn btn-danger text-white" >BUY NOW</button>
 
-</div>
 
-</div>
 
-<div className="col">
 
-<div className="row">
+                                            {/* <button className="card-link btn-lg btn-warning text-white"><i class="fa fa-shopping-cart"></i>&nbsp;ADD TO CART</button>*/}
 
-<b>{productName}</b>
+                                            <button className="card-link btn btn-danger text-white" >BUY NOW</button>
 
-<p className="ml-4">
+                                        </div>
 
-<span className="badge badge-success mr-1">
+                                    </div>
 
-{starRating}
+                                    <div className="col">
 
-<i className="fas fa-star"></i>
+                                        <div className="row">
 
-</span>
+                                            <b>{productName}</b>
 
-<span className="text-muted">{totalRating}Ratings, {totalReviews}Reviews </span></p>
+                                            <p className="ml-4">
 
-</div>
+                                                <span className="badge badge-success mr-1">
 
-<div className="row">
+                                                    {starRating}
 
-<div className="col">
+                                                    <i className="fas fa-star"></i>
 
-<ul>
+                                                </span>
 
-{specifications.map(x=> { return <li>{x}</li>}) }
+                                                <span className="text-muted">{totalRating}Ratings, {totalReviews}Reviews </span></p>
 
-</ul>
+                                        </div>
 
-</div>
+                                        <div className="row">
 
-</div>
+                                            <div className="col">
 
-</div>
+                                                <ul>
 
-<div className="col">
+                                                    {specifications.map(x => { return <li>{x}</li> })}
 
-<span><b>${price}</b></span>&nbsp;&nbsp;&nbsp;&nbsp;
+                                                </ul>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div className="col">
+
+                                        <span><b>${price}</b></span>&nbsp;&nbsp;&nbsp;&nbsp;
 
 {/*<strike class="text-muted">{actualPrice}</strike>
 
 <p style={{ color: 'green' }}>{offer}</p>*/}
 
-</div>
+                                    </div>
 
-</div>
+                                </div>
 
-</li>
+                            </li>
 
-))}
+                        ))}
 
-</ul>
+                </ul>
 
-</div>
+            </div>
 
-</>
+        </>
 
-);
+    );
 
 }
 
