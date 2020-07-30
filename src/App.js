@@ -5,30 +5,32 @@ import Home from './Amazon/Home'
 import Login from './Amazon/Login'
 import CreateAccount from './Amazon/CreateAccount'
 import Main from './components/Main'
-import DeliveryLocation from './Amazon/DeliveryLocation'
-import { BrowserRouter as Router, Link, Route } from "react-router-dom";
+
+import { BrowserRouter as Router,  Route } from "react-router-dom";
+
 const App = () => {
 
   return (
     <div>
 
 
-      <Router>
+     <Router>
 
 
-        <Main />
+       < Main />
 
 
-        <Route exact path="/home" component={Home}></Route>
+       <Route exact path="/home" component={Home}></Route>
 
-        <Route exact path="/Login" component={Login}></Route>
-        <Route exact path="/CreateAccount" component={CreateAccount}></Route>
+      <Route exact path="/Login" component={Login}></Route>
+  <Route exact path="/CreateAccount" component={CreateAccount}></Route>
+  
+  
+  </Router>
 
-      </Router>
-
-      <AmazonFooter></AmazonFooter>
-      {/*<DeliveryLocation/>*/}
-
+     <AmazonFooter></AmazonFooter>
+     
+   
     </div>
   );
 
