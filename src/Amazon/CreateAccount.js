@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Link, Route } from "react-router-dom";
+import { Link } from "react-router-dom";
 const CreateAccount = () => {
 
     return (
@@ -35,35 +35,35 @@ const CreateAccount = () => {
                 leXa4WLzfPXyyVz7fz1zVXF//VXW/g2RPkm9/D+FWtmflouNrj+8Ny/m9zqyrtPW9u/r0s1qucpql19uqffOn998xCyXiZUzXCzIRK+gqI76TffE8Uobda
                 7vG7iqUTGL+stgzfEy232CSbWmra5qNufpTezeIIjZq7Si0zvUftR3cVnzKer9xDVPJ6aLm9g3j72U3FV4yfHh63J9oudVru/eV3RuOX9Db3D1c78kmsj
                 Y/devl/ftjUe37ie3VeAWgqrutere/nt78wVx7HePP0NF8uX9fr9cNy+fafPSUkCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCII
-                gCIIgCIIgCIIgCIL4Tv4Hu9e8exYznDIAAAAASUVORK5CYII=" style={{float:'none',marginLeft:'500px' }} height="70" width="100" />
-                <div className="card" style={{ width: '420px', margin:'0 auto',float:'none' }}>
+                gCIIgCIIgCIIgCIL4Tv4Hu9e8exYznDIAAAAASUVORK5CYII=" style={{ float: 'none', marginLeft: '500px' }} height="70" width="100" alt="amazon" />
+                <div className="card" style={{ width: '420px', margin: '0 auto', float: 'none' }}>
                     <div className="card-body">
-                                <h3 className="ml-3">Create account</h3>
-                                <form>
-                                <div className="form-group">
-                                       <strong> <label htmlFor="nm" className="float-left">Your name</label></strong>
-                                        <input type="name" className="form-control" id="nm"  name="name" />
-                                    </div>
-                                    <div className=" form-group">
-                                        <strong><label htmlFor="email"> Email</label></strong>
-                                        <input type="email" className="form-control" id="email"  name="email" />
-                                    </div>
-                                    <div class="form-group">
-                                       <strong> <label htmlFor="pwd">Password</label></strong>
-                                        <input type="password" className="form-control" id="pwd" placeholder="At least 6 characters" name="pswd" />
-                                        <p>Passwords must be at least 6 characters</p>
-                                    </div>
-                                    <div className="form-group">
-                                       <strong> <label htmlFor="pwd">Re-enter password</label></strong>
-                                        <input type="password" className="form-control" id="pwd"  name="pswd" />
+                        <h3 className="ml-3">Create account</h3>
+                        <form>
+                            <div className="form-group">
+                                <strong> <label htmlFor="nm" className="float-left">Your name</label></strong>
+                                <input type="name" className="form-control" id="nm" name="name" />
                             </div>
-                                    <button type="button" className="btn btn-block float-left" style={{ backgroundColor: '#ffa64d' }}> Create your Amazon account</button>
-                                </form>
-                                 <p>By creating an account,you agree to Amazon's <a href="#">Conditions of Use</a> and <a href="#">Privacy Notice.</a></p>  
-                                 <p>Already have an account?<Link to="/Login"><a href="#">Sign-in<i className="fas fa-caret-right"></i></a></Link></p>
+                            <div className=" form-group">
+                                <strong><label htmlFor="email"> Email</label></strong>
+                                <input type="email" className="form-control" id="email" name="email" />
+                            </div>
+                            <div class="form-group">
+                                <strong> <label htmlFor="pwd">Password</label></strong>
+                                <input type="password" className="form-control" id="pwd" placeholder="At least 6 characters" name="pswd" />
+                                <p>Passwords must be at least 6 characters</p>
+                            </div>
+                            <div className="form-group">
+                                <strong> <label htmlFor="pwd">Re-enter password</label></strong>
+                                <input type="password" className="form-control" id="pwd" name="pswd" />
+                            </div>
+                            <button type="button" className="btn btn-block float-left" style={{ backgroundColor: '#ffa64d' }}> Create your Amazon account</button>
+                        </form>
+                        <p>By creating an account,you agree to Amazon's <span className="text-primary">Conditions of Use</span> and <span className="text-primary">Privacy Notice.</span></p>
+                        <p>Already have an account?<Link to="/Login"><span>Sign-in<i className="fas fa-caret-right"></i></span></Link></p>
                     </div>
                 </div>
-                
+
             </div>
         </>
     )
